@@ -26,7 +26,7 @@ const MidSection = () => {
         {
             imageURL.map( image => (
                 <Grid lg={4} md={4} sm={12} xs={12} >
-                  <img src={image} alt="image" style={{ width:'100%'}}/>
+                  <img src={image} alt="sorry" style={{ width:'100%'}}/>
                 </Grid>
             ))
         }
