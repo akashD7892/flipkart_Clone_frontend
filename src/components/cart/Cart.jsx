@@ -1,12 +1,12 @@
 
-import { Grid, Box, Typography, styled, Button } from "@mui/material";
+import { Grid, Box, Typography, styled } from "@mui/material";
 import { useSelector } from "react-redux";
 
 //component
 import CartItem from "./CartItem";
 import TotalView from "./TotalView";
 import EmptyCart from "./EmptyCart";
-import { useState } from "react";
+
 
 const Container = styled(Grid) (({theme}) => ({
     padding: '30px 135px' ,

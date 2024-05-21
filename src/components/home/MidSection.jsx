@@ -1,5 +1,5 @@
 import { imageURL } from "../../constants/data";
-import { Box, Grid, styled } from "@mui/material";
+import { Grid, styled } from "@mui/material";
 
 const Wrapper = styled(Grid)`
 margin-top: 10px ;
@@ -31,7 +31,7 @@ const MidSection = () => {
             ))
         }
        </Wrapper>
-       <Image src={url} alt="pic" />
+       <Image src={url} alt="sorry" />
        </>
     )
 }

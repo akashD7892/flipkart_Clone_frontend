@@ -1,7 +1,7 @@
-import { combineReducers, createStore, applyMiddleware } from 'redux' ;
+import { combineReducers } from 'redux' ;
 
 import thunk from 'redux-thunk' ;
-import {composeWithDevTools} from 'redux-devtools-extension' ;
+//import {composeWithDevTools} from 'redux-devtools-extension' ;
 import { getProductDetailsReducer, getProductsReducer } from './reducers/productReducer';
 import { cartReducer } from './reducers/cartReducer' ;
 
@@ -15,7 +15,7 @@ const reducers = combineReducers({
     cart:cartReducer
 })
 
-const middleware = [thunk] ;
+//const middleware = [thunk] ;
 
 //Redux persist library 
 const persistConfig = {
