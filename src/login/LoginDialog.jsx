@@ -75,7 +75,7 @@ const accountInitialValues = {
 const signupInitialValues = {
   firstname: '',
   lastname: '',
-  usename: '',
+  username: '',
   email: '',
   password: '',
   phone: ''
@@ -112,6 +112,7 @@ export default function LoginDialog({ open, setOpen }) {
 
   const signupUser = async () => {
     //to add the data to database
+    console.log("usernname",signup ) ;
     let response = await authenticateSignup(signup);
     if (!response)
       return;

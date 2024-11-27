@@ -5,6 +5,7 @@ const URL = 'https://flipkart-clone-backened.onrender.com' ;
 
 export const authenticateSignup = async(data) => {
     try {
+       console.log("data", data) ;
        return await axios.post( `${URL}/signup`, data )
     } catch( error ) {
          console.log('Error while calling signup api', error)

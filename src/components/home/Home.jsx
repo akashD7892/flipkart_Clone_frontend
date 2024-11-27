@@ -38,7 +38,7 @@ export default function Home() {
 
     <Component>
       <Banner/>
-      
+      { products ? ( <>
       <MidSlide products = {products} title="Deal of the Day" timer={true} />
       <MidSection/>
       <Slide products = {products} title="Discount for you" timer={false}/>
@@ -48,6 +48,12 @@ export default function Home() {
       <Slide products = {products} title="Trending offers" timer={false}/>
       <Slide products = {products} title="Season' of top picks" timer={false}/>
       <Slide products = {products} title="Top Deals on Accessories" timer={false}/>
+      </>
+      ): (
+        <div>Loading...</div>
+      )
+
+     }
 
     </Component>
     
